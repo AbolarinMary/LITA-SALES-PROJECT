@@ -279,7 +279,11 @@ Copy and paste the product to column K, then remove duplicate in order to have o
 ![Screenshot (581)](https://github.com/user-attachments/assets/b31a1c95-b6f6-4c29-bcd7-5b5856d14c82)
 
 
+
+
 **Total Revenue by Region**
+
+ =AVERAGEIF(range,criteria[average-range]) 
 
 Copy and paste the Region to column K, then remove duplicate in order to have our unique Region list. Then use the formular =SUMIF(D:D,Table2[@Region],H:H) to calculate our sum of revenue for each region. Where “D:D” rep our Region column, “Table2[@Region” rep the region we are working with, “,H:H” rep our Revenue Column.
 
