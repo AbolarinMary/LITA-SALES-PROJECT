@@ -315,7 +315,7 @@ Set Sales = quantity * unitprice)
 
 
 
-retrieve the total sales for each product category.
+**retrieve the total sales for each product category.**
 
 ```
 Total Sales by Product
@@ -325,6 +325,23 @@ Order by Total_Revenue desc
 ```
 
 
+![Screenshot (586)](https://github.com/user-attachments/assets/0b746675-fe54-4861-a4d9-0dbbae35600d)
+
+
+Insight : -Hats and shoes makes most sales and should be considered for marketing and high stock provision.
+
+
+**find the number of sales transactions in each region**
+
+```
+Sales Transactions by Region
+Select Region, sum(Revenue) as Sales_Per_Product from [dbo].[Sales Data]
+Group by Region
+Order by Sales_Per_Product desc
+```
+
+
+![Screenshot (587)](https://github.com/user-attachments/assets/786004aa-533b-4462-88a2-bc03f3de92d8)
 
 
 
@@ -332,18 +349,24 @@ Order by Total_Revenue desc
 
 
 
+**Find the highest-selling product by total sales value**
+
+
+```
+select top 1 Product,
+sum (sales) AS Total_sales
+from [dbo].[LITA Capstone Dataset SalesData]
+group by product
+order by Total_sales desc
+```
+Shoe is the highest selling product with a total sales value of 613380
+
+
+**calculate total revenue per product.**
 
 
 
-
-
-
-
-
-
-
-
-
+![Screenshot (592)](https://github.com/user-attachments/assets/23254779-25d9-4a97-a6dd-f3ddd042ed16)
 
 
 
