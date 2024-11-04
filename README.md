@@ -273,12 +273,19 @@ Close attention should be made to correct whatever affected the sales during the
 
 
 
+**Use Excel formulas to calculate metrics
+
+**
 
 
+**Average Sales per Product:**
+ =AVERAGEIF(range,criteria[average-range]) 
 
 
+Copy and paste the product to column K, then remove duplicate in order to have our unique product list. Then use the formular =AVERAGEIF(C:C,N2,H:H) to calculate our average sales for each product. Where “C:C” rep our product column, “N2” rep the product we are working with, “H:H” rep our Sales Column.
 
 
+![Screenshot (577)](https://github.com/user-attachments/assets/b362e814-eba4-4912-a039-c53d7ee2d359)
 
 
 
@@ -440,8 +447,7 @@ Region in Rows and Sales Amount in Values.
 ##Calculating Metrics:##
 Using excel formulas
 
-Average Sales per Product:
- =AVERAGE(range_of_sales_amounts) where the range includes all sales for each product.
+each product.
  
 
  
