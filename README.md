@@ -1,4 +1,4 @@
-Outline
+**Outline**
 
 Project Summary
 Project Objectives
@@ -15,43 +15,70 @@ Conclusion
 Recommendation
 
 
-##Project Summary: Sales Performance Analysis##
+**Project Summary: Sales Performance Analysis**
+
 In this project, the goal is to analyze the sales performance of a retail store through a comprehensive exploration of sales data, using Excel, SQL, and Power BI to uncover key insights. The analysis focuses on identifying top-selling products, assessing regional performance, and analyzing monthly sales trends.
 
-##Project Objectives##
+
+**Project Objectives**
 To Utilize pivot tables to summarize total sales by product, region, and month, providing a clear overview of performance.
+
 To Employ Excel formulas to derive key metrics such as average sales per product and total revenue by region, offering deeper insights into sales dynamics.
+
 To Create additional reports to highlight interesting trends or anomalies in the sales data.
+
 To Retrieve total sales for each product category.
+
 To Count sales transactions per region to gauge activity levels.
+
 To Identify the highest-selling product based on total sales value.
+
 To Calculate total revenue per product to assess profitability.
+
 To aggregate monthly sales totals for the current year to identify trends.
+
 To determine the top 5 customers by total purchase amount to understand customer value.
+
 To calculate the percentage of total sales contributed by each region for a comparative view.
+
 To identify products with no sales in the last quarter to flag potential issues.
+
 To develop an interactive Power BI dashboard that encapsulates the insights gained from both Excel and SQL analyses.
+
 To identify sales overview to provide a snapshot of overall performance.
+
 To identify top-performing products to highlight key drivers of revenue.
+
 To identify regional breakdowns to analyze sales distribution and performance across different areas.
 
 #This structured approach aims to deliver a comprehensive understanding of sales performance, facilitating data-driven decision-making for future strategies#
 
-##Data Source##
+
+
+**Data Source**
 The datasets of this project was provided by ladies in tech africa as an assignment for analytic purpose.
 
-##Dataset##
+**Dataset**
 The dataset used for this project contains the following fields:
+
 OrderID: A unique identifier assigned to each order for tracking and reference.
+
 Customer Id: A unique identifier for each customer, used to distinguish them within the database.
+
 Product: The item or service being sold in the order.
+
 Region: The geographic area where the order was placed or fulfilled.
+
 OrderDate: The date when the order was placed by the customer.
+
 Quantity: The number of units of the product ordered.
+
 UnitPrice: The price per individual unit of the product.
+
 Revenue: The total income generated from the order, calculated as Quantity × UnitPrice.
 
-##Tools used##
+
+**Tools used**
 
 
 
