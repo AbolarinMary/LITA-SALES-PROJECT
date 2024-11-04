@@ -1,4 +1,4 @@
-#**Outline**
+##**Outline**##
 
 Project Summary
 Project Objectives
@@ -310,14 +310,16 @@ add Sales int
 
 
 SALES COLUMN WAS CALCULATED
+
+```sql
 (Update [dbo].[LITA Capstone Dataset SalesData]
 Set Sales = quantity * unitprice)
-
+```
 
 
 **retrieve the total sales for each product category.**
 
-```
+```sql
 Total Sales by Product
 Select [Product], sum(Revenue) as Total_Revenue from [dbo].[Sales Data]
 Group by [Product]
@@ -333,7 +335,7 @@ Insight : -Hats and shoes makes most sales and should be considered for marketin
 
 **find the number of sales transactions in each region**
 
-```
+```sql
 Sales Transactions by Region
 Select Region, sum(Revenue) as Sales_Per_Product from [dbo].[Sales Data]
 Group by Region
@@ -359,7 +361,7 @@ from [dbo].[LITA Capstone Dataset SalesData]
 group by product
 order by Total_sales desc
 ```
-Shoe is the highest selling product with a total sales value of 613380
+Insight: Shoe is the highest selling product with a total sales value of 613380
 
 
 **calculate total revenue per product.**
@@ -382,7 +384,7 @@ Order by Sales_Month;
 
 **Find the top 5 customers by total purchase amount.**
 
-```
+```sql
 select top 5 Customer_Id,
 sum (Sales) as Total_sales
 from [dbo].[LITA Capstone Dataset SalesData]
@@ -398,7 +400,7 @@ order by Total_sales desc
 
 **calculate the percentage of total sales contributed by each region**
 
-```
+```sql
 select Region,
 sum (Sales) as Total_sales,
 (sum (sales)*100/
@@ -416,7 +418,7 @@ order by Sales_percentage DESC
 
 Identify products with no sales in the last quarter
 
-```
+```sql
 SELECT DISTINCT Product 
 FROM [dbo].[LITA Capstone Dataset SalesData]
 WHERE Product NOT IN 
