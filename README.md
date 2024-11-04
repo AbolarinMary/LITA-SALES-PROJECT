@@ -1,4 +1,4 @@
-##**Outline**##
+**Outline**
 
 Project Summary
 Project Objectives
