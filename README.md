@@ -302,14 +302,27 @@ Copy and paste the Region to column K, then remove duplicate in order to have ou
 **SQL
 **
 
+When loading my dataset I changed the unitsales and quantity column to “int” datatype
+
+ADDED A COLUMN NAME SALES
+Alter Table [dbo].[LITA Capstone Dataset SalesData]
+add Sales int
+
+
+SALES COLUMN WAS CALCULATED
+(Update [dbo].[LITA Capstone Dataset SalesData]
+Set Sales = quantity * unitprice)
 
 
 
+retrieve the total sales for each product category.
 
-
-
-
-
+```
+Total Sales by Product----------
+Select [Product], sum(Revenue) as Total_Revenue from [dbo].[Sales Data]
+Group by [Product]
+Order by Total_Revenue desc
+```
 
 
 
