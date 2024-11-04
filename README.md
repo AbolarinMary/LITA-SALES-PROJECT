@@ -1,4 +1,4 @@
-**Outline**
+#**Outline**
 
 Project Summary
 Project Objectives
@@ -101,7 +101,7 @@ Purpose: Github is iseal for portfolio building and public showcasing of the wor
 
 
 
-**Data Cleaning and Preparation**
+##**Data Cleaning and Preparation**
 
 Data cleaning is a crucial step in the data analysis process that ensures data is accurate, consistent, and complete. Here are some steps you can take to clean data for analysis: 
 
@@ -352,7 +352,7 @@ Order by Sales_Per_Product desc
 **Find the highest-selling product by total sales value**
 
 
-```
+```sql
 select top 1 Product,
 sum (sales) AS Total_sales
 from [dbo].[LITA Capstone Dataset SalesData]
@@ -372,7 +372,7 @@ Shoe is the highest selling product with a total sales value of 613380
 
 **calculate monthly sales totals for the current year**
 
-```
+```sql
 Select Datefromparts(Year(OrderDate), Month(OrderDate), 1) as Sales_Month, Sum(Revenue) as Monthly_Total  
 From [dbo].[Sales Data]
 Where Year(OrderDate) = Year(GETDATE())
