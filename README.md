@@ -51,13 +51,14 @@ To identify top-performing products to highlight key drivers of revenue.
 
 To identify regional breakdowns to analyze sales distribution and performance across different areas.
 
-**This structured approach aims to deliver a comprehensive understanding of sales performance, facilitating data-driven decision-making for future strategies
-**
+This structured approach aims to deliver a comprehensive understanding of sales performance,facilitating data-driven decision-making for future strategies
+
 
 
 **Data Source**
 
 The datasets of this project was provided by ladies in tech africa as an assignment for analytic purpose.
+
 
 **Dataset**
 
@@ -99,9 +100,12 @@ Purpose: Power BI is designed for data visualization and business intelligence, 
 Purpose: Github is iseal for portfolio building and public showcasing of the work done.
 
 
+
 **Data Cleaning and Preparation**
 
 Data cleaning is a crucial step in the data analysis process that ensures data is accurate, consistent, and complete. Here are some steps you can take to clean data for analysis: 
+
+![Screenshot (560)](https://github.com/user-attachments/assets/a2328b07-ed69-42d9-8f91-d17356486506)
 
 
 **Remove duplicates**
@@ -116,6 +120,8 @@ Added a new column to calculate revenue using the formula Quantity * Unit Price 
 Purpose:
 
 Calculating revenue allows us to analyze total earnings per product, region, and period, which is essential for evaluating sales performance and profitability. 
+
+
 
 
 
