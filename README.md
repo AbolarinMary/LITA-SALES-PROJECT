@@ -237,6 +237,51 @@ Grand Total	 2,101,090.00
 ![Screenshot (570)](https://github.com/user-attachments/assets/174d9edf-9782-4125-b9da-2a779b9f0896)
 
 
+**Revenue per month
+**
+
+
+Month	Sum of Revenue
+Jan	248000
+Feb	546300
+Mar	107175
+Apr	46865
+May	104280
+Jun	247600
+Jul	274800
+Aug	204180
+Sep	34720
+Oct	133920
+Nov	103950
+Dec	49300
+Grand Total	2101090
+![image](https://github.com/user-attachments/assets/05d8521a-23af-4c3f-8e14-7ac0186e03c6)
+
+
+![Screenshot (573)](https://github.com/user-attachments/assets/6118d03b-7383-46eb-a0bf-4da1920419f1)
+
+
+![Screenshot (576)](https://github.com/user-attachments/assets/6e84e220-9ca3-4f66-89fa-e49ddbce206a)
+
+
+
+Insight : The business made most revenue in febuary and july, april,september and december brought in least revenue.
+
+Considering these festive periods(april & december), the revenue ought to greatly increase during these months.
+
+Close attention should be made to correct whatever affected the sales during these periods
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
