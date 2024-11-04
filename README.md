@@ -241,20 +241,7 @@ Grand Total	 2,101,090.00
 **
 
 
-Month	Sum of Revenue
-Jan	248000
-Feb	546300
-Mar	107175
-Apr	46865
-May	104280
-Jun	247600
-Jul	274800
-Aug	204180
-Sep	34720
-Oct	133920
-Nov	103950
-Dec	49300
-Grand Total	2101090
+
 ![image](https://github.com/user-attachments/assets/05d8521a-23af-4c3f-8e14-7ac0186e03c6)
 
 
