@@ -99,6 +99,81 @@ Purpose: Power BI is designed for data visualization and business intelligence, 
 Purpose: Github is iseal for portfolio building and public showcasing of the work done.
 
 
+**Data Cleaning and Preparation**
+
+Data cleaning is a crucial step in the data analysis process that ensures data is accurate, consistent, and complete. Here are some steps you can take to clean data for analysis: 
+
+
+**Remove duplicates**
+
+Highlighted all data (Ctrl + A) and removed duplicates via Data tab > Remove Duplicates option. This step removed 40,079 duplicate values, leaving 9,921 unique records.
+
+
+**Calculate revenue**
+
+Added a new column to calculate revenue using the formula Quantity * Unit Price for each order.
+
+Purpose:
+
+Calculating revenue allows us to analyze total earnings per product, region, and period, which is essential for evaluating sales performance and profitability. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
