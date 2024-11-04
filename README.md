@@ -177,14 +177,21 @@ regional breakdowns
 
 Excel
 
-Product	Sum of Revenue
+1) Product	Sum of Revenue
+
 Shoes	613380
+
 Shirt	485600
+
 Hat	316195
+
 Gloves	296900
+
 Jacket	208230
+
 Socks	180785
-Grand Total	2101090
+
+Grand Total	**2101090**
 
 ![Screenshot (564)](https://github.com/user-attachments/assets/7abc7ce1-1a26-4f0e-ad2e-0b38f77050e1)
 
@@ -196,6 +203,48 @@ Grand Total	2101090
 
 Insight: 
 Shoes and shirt are the best selling products for the period in review
+
+
+
+
+2) **Sales by region**
+
+   
+South	927820
+
+East	485925
+
+North	387000
+
+West	300345
+
+Grand Total	 2,101,090.00 
+
+
+![Screenshot (568)](https://github.com/user-attachments/assets/890f7479-d9ef-4cad-b974-cafc8b99a395)
+
+
+Row Labels	Sum of Revenue
+South	927820
+East	485925
+North	387000
+West	300345
+Grand Total	 2,101,090.00 
+
+
+
+
+![Screenshot (570)](https://github.com/user-attachments/assets/174d9edf-9782-4125-b9da-2a779b9f0896)
+
+
+
+
+
+
+
+
+
+
 
 
 
