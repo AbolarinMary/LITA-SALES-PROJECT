@@ -186,9 +186,16 @@ Jacket	208230
 Socks	180785
 Grand Total	2101090
 
+![Screenshot (564)](https://github.com/user-attachments/assets/7abc7ce1-1a26-4f0e-ad2e-0b38f77050e1)
+
+
+![image](https://github.com/user-attachments/assets/51cabbce-3751-4557-a1e5-10663666ee68)
 
 
 
+
+Insight: 
+Shoes and shirt are the best selling products for the period in review
 
 
 
