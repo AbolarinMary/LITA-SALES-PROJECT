@@ -288,7 +288,8 @@ Copy and paste the product to column K, then remove duplicate in order to have o
 Copy and paste the Region to column K, then remove duplicate in order to have our unique Region list. Then use the formular =SUMIF(D:D,Table2[@Region],H:H) to calculate our sum of revenue for each region. Where “D:D” rep our Region column, “Table2[@Region” rep the region we are working with, “,H:H” rep our Revenue Column.
 
 
-![Screenshot (582)](https://github.com/user-attachments/assets/ed20455a-b3ba-4bf1-97f5-a5857ad379ab)
+![Screenshot (584)](https://github.com/user-attachments/assets/c6c3363c-2d6a-4f34-8140-92de9d6869dc)
+
 
 
 
