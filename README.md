@@ -51,14 +51,16 @@ To identify top-performing products to highlight key drivers of revenue.
 
 To identify regional breakdowns to analyze sales distribution and performance across different areas.
 
-#This structured approach aims to deliver a comprehensive understanding of sales performance, facilitating data-driven decision-making for future strategies#
-
+**This structured approach aims to deliver a comprehensive understanding of sales performance, facilitating data-driven decision-making for future strategies
+**
 
 
 **Data Source**
+
 The datasets of this project was provided by ladies in tech africa as an assignment for analytic purpose.
 
 **Dataset**
+
 The dataset used for this project contains the following fields:
 
 OrderID: A unique identifier assigned to each order for tracking and reference.
@@ -80,6 +82,21 @@ Revenue: The total income generated from the order, calculated as Quantity × Un
 
 **Tools used**
 
+1. Excel
+
+Purpose: Excel is great for initial data exploration and quick analysis. It allows for easy manipulation of data and visualization through pivot tables and charts.
+
+2. SQL
+
+Purpose: SQL is ideal for querying large datasets efficiently and performing complex analyses. It provides a robust framework for data manipulation and retrieval.
+
+3. Power BI
+
+Purpose: Power BI is designed for data visualization and business intelligence, allowing users to create interactive reports and dashboards. It makes it easier to communicate insights derived from data.
+
+4.  Github
+
+Purpose: Github is iseal for portfolio building and public showcasing of the work done.
 
 
 
