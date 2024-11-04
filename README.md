@@ -318,7 +318,7 @@ Set Sales = quantity * unitprice)
 retrieve the total sales for each product category.
 
 ```
-Total Sales by Product----------
+Total Sales by Product
 Select [Product], sum(Revenue) as Total_Revenue from [dbo].[Sales Data]
 Group by [Product]
 Order by Total_Revenue desc
