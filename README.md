@@ -370,40 +370,90 @@ Shoe is the highest selling product with a total sales value of 613380
 
 
 
+**calculate monthly sales totals for the current year**
 
+```
+Select Datefromparts(Year(OrderDate), Month(OrderDate), 1) as Sales_Month, Sum(Revenue) as Monthly_Total  
+From [dbo].[Sales Data]
+Where Year(OrderDate) = Year(GETDATE())
+Group by Datefromparts(Year(OrderDate), Month(OrderDate), 1)
+Order by Sales_Month;
+```
 
+**Find the top 5 customers by total purchase amount.**
 
+```
+select top 5 Customer_Id,
+sum (Sales) as Total_sales
+from [dbo].[LITA Capstone Dataset SalesData]
+group by Customer_Id
+order by Total_sales desc
+```
 
 
 
+![Screenshot (590)](https://github.com/user-attachments/assets/74faefae-ad5f-4f30-861f-4a3fdc37a5ea)
 
 
 
+**calculate the percentage of total sales contributed by each region**
 
+```
+select Region,
+sum (Sales) as Total_sales,
+(sum (sales)*100/
+(select sum (sales) from [dbo].[LITA Capstone Dataset SalesData])) as Sales_percentage
+from [dbo].[LITA Capstone Dataset SalesData]
+group by Region
+order by Sales_percentage DESC
+```
 
 
 
+![Screenshot (589)](https://github.com/user-attachments/assets/e8eb6cea-5c51-4492-9154-7eca3b40c8c3)
 
 
 
+Identify products with no sales in the last quarter
 
+```
+SELECT DISTINCT Product 
+FROM [dbo].[LITA Capstone Dataset SalesData]
+WHERE Product NOT IN 
+(SELECT Product
+FROM [dbo].[LITA Capstone Dataset SalesData]
+WHERE OrderDate >= DATEADD(QUARTER, -1, GETDATE()))
+```
 
 
+**Key Findings**
 
+Highest Selling Product: Shoes generated the highest revenue, totaling 613,380 units sold.
 
+Revenue by Region: The South region was the top-performing region, generating 927,820 in revenue, followed by East and North regions.
 
+Sales Trends by Month: Sales peaked in February with a revenue of 546,300, while the lowest sales occurred in September and October, indicating a seasonal sales dip.
 
+The analysis reveals a few key insights:
 
+**Product Performance**: Shoes are the most selling item, representing a high sales value across all regions. However,jacket and socks needs  improved marketing 
 
+Regional Sales: The South region shows a significantly higher revenue contribution, which could indicate a strong customer preference or effective marketing strategies within this region.
 
 
 
+**Recommendation**
 
 
+Enhance Marketing for Top-Performing Products Focus on marketing campaigns that promote the top-selling product categories, especially Shoes. Highlighting their popularity could increase brand trust and encourage further purchases.
 
+Product Diversification and Bundling Opportunities To boost revenue from low-performing items like Socks and Jackets, consider creating product bundles or seasonal discounts. This could attract budget-conscious customers and increase average sales per customer.
 
+Targeted Regional Campaigns With the South region demonstrating the highest revenue, additional promotional efforts in East and West could help balance sales distribution. A focus on localized marketing strategies may appeal to unique preferences in each region.
 
+Address Seasonal Sales Fluctuations To combat the dip in sales observed in September and October, consider introducing seasonal promotions or limited-time offers during these months to stimulate demand.
 
+Customer Segmentation and Retention With a large unique customer base, implementing customer segmentation could allow for more tailored marketing. Sending targeted offers based on past purchases can help drive repeat sa
 
 
 
@@ -445,263 +495,6 @@ Shoe is the highest selling product with a total sales value of 613380
 
 
 
-
-
-
-
-
-
-
-1. Excel Analysis
-Initial Exploration:
-Data Cleaning i.e
-Remove duplicates and blanks
-Sort
-
-
-Pivot Tables:
- 1) Pivot table to summarize total sales by product. 
-Product in the Rows field and Sales Amount in the Values field.
-
-
-
-
-2)Pivot table to summarize Sales by region. 
-Region in Rows and Sales Amount in Values.
-
-
-
-3) Pivot table to summarize monthly sales.
- Month in Rows and Sales Amount in Values.
-
-
-##Calculating Metrics:##
-Using excel formulas
-
-each product.
- 
-
- 
-Total Revenue by Region:
-Use a formula: =SUMIF(range_of_regions, region_name, range_of_sales) to get total revenue for each region.
-Additional Reports:
-
-Consider creating a report that shows the sales trend over time using a line chart, comparing total sales per month.
-2. SQL Queries
-Setup:
-
-Load your sales dataset into SQL Server.
-Key Queries:
-
-Total Sales for Each Product Category:
-
-sql
-Copy code
-SELECT ProductCategory, SUM(SalesAmount) AS TotalSales
-FROM Sales
-GROUP BY ProductCategory;
-Number of Sales Transactions in Each Region:
-
-sql
-Copy code
-SELECT Region, COUNT(TransactionID) AS NumberOfTransactions
-FROM Sales
-GROUP BY Region;
-Highest-Selling Product by Total Sales Value:
-
-sql
-Copy code
-SELECT TOP 1 Product, SUM(SalesAmount) AS TotalSales
-FROM Sales
-GROUP BY Product
-ORDER BY TotalSales DESC;
-Total Revenue per Product:
-
-sql
-Copy code
-SELECT Product, SUM(SalesAmount) AS TotalRevenue
-FROM Sales
-GROUP BY Product;
-Monthly Sales Totals for the Current Year:
-
-sql
-Copy code
-SELECT MONTH(SaleDate) AS Month, SUM(SalesAmount) AS MonthlyTotal
-FROM Sales
-WHERE YEAR(SaleDate) = YEAR(GETDATE())
-GROUP BY MONTH(SaleDate);
-Top 5 Customers by Total Purchase Amount:
-
-sql
-Copy code
-SELECT TOP 5 CustomerID, SUM(SalesAmount) AS TotalPurchase
-FROM Sales
-GROUP BY CustomerID
-ORDER BY TotalPurchase DESC;
-Percentage of Total Sales Contributed by Each Region:
-
-sql
-Copy code
-SELECT Region, 
-       SUM(SalesAmount) * 100.0 / (SELECT SUM(SalesAmount) FROM Sales) AS PercentageContribution
-FROM Sales
-GROUP BY Region;
-Products with No Sales in the Last Quarter:
-
-sql
-Copy code
-SELECT Product
-FROM Products
-WHERE ProductID NOT IN (
-    SELECT ProductID
-    FROM Sales
-    WHERE SaleDate >= DATEADD(QUARTER, -1, GETDATE())
-);
-3. Power BI Dashboard
-Creating the Dashboard:
-
-Data Import:
-
-Load your Excel summaries and SQL query results into Power BI.
-Visualizations:
-
-Create a sales overview card displaying total sales.
-Use bar charts for top-performing products.
-Implement a pie chart or a stacked bar chart for regional breakdowns.
-Add line charts to show monthly sales trends.
-Interactivity:
-
-Use slicers for product categories and regions to allow users to filter the data dynamically.
-Publishing:
-
-Once your dashboard is ready, publish it to the Power BI service.
-4. GitHub Repository
-Creating the Repository:
-Create a new repository on GitHub for this project.
-Include the following:
-A README.md file detailing your project, objectives, and how to use the dashboard.
-Folder structure for your Excel files, SQL scripts, and Power BI files.
-Any additional documentation or insights you gathered during the analysis.
-Final Steps
-Review all your findings and visualizations to ensure accuracy.
-Prepare a presentation or report summarizing your insights for stakeholders.
-Good luck with your project! If you need any specific help along the way, feel free to ask!
-
-
-
-
-Column Titles
-1. Excel Analysis
-Initial Exploration:
-
-Sales by Region:
-Create a pivot table with "Region" in Rows and sum of "Revenue" in Values.
-Monthly Sales:
-Use "OrderDate" (grouped by month) in Rows and sum of "Revenue" in Values.
-Calculating Metrics:
-
-Average Sales per Product:
-
-excel
-Copy code
-=AVERAGEIF(ProductRange, ProductName, RevenueRange)
-Total Revenue by Region:
-
-excel
-Copy code
-=SUMIF(RegionRange, RegionName, RevenueRange)
-Additional Reports:
-
-Create a line chart for monthly revenue trends or a bar chart for sales by customer.
-2. SQL Queries
-Make sure your SQL queries reflect the specific columns:
-
-Total Sales for Each Product:
-
-sql
-Copy code
-SELECT Product, SUM(Revenue) AS TotalSales
-FROM Sales
-GROUP BY Product;
-Number of Sales Transactions in Each Region:
-
-sql
-Copy code
-SELECT Region, COUNT(OrderID) AS NumberOfTransactions
-FROM Sales
-GROUP BY Region;
-Highest-Selling Product by Total Sales Value:
-
-sql
-Copy code
-SELECT TOP 1 Product, SUM(Revenue) AS TotalSales
-FROM Sales
-GROUP BY Product
-ORDER BY TotalSales DESC;
-Total Revenue per Product:
-
-sql
-Copy code
-SELECT Product, SUM(Revenue) AS TotalRevenue
-FROM Sales
-GROUP BY Product;
-Monthly Sales Totals for the Current Year:
-
-sql
-Copy code
-SELECT MONTH(OrderDate) AS Month, SUM(Revenue) AS MonthlyTotal
-FROM Sales
-WHERE YEAR(OrderDate) = YEAR(GETDATE())
-GROUP BY MONTH(OrderDate);
-Top 5 Customers by Total Purchase Amount:
-
-sql
-Copy code
-SELECT TOP 5 CustomerId, SUM(Revenue) AS TotalPurchase
-FROM Sales
-GROUP BY CustomerId
-ORDER BY TotalPurchase DESC;
-Percentage of Total Sales Contributed by Each Region:
-
-sql
-Copy code
-SELECT Region, 
-       SUM(Revenue) * 100.0 / (SELECT SUM(Revenue) FROM Sales) AS PercentageContribution
-FROM Sales
-GROUP BY Region;
-Products with No Sales in the Last Quarter:
-
-sql
-Copy code
-SELECT Product
-FROM Sales
-WHERE Product NOT IN (
-    SELECT Product
-    FROM Sales
-    WHERE OrderDate >= DATEADD(QUARTER, -1, GETDATE())
-);
-3. Power BI Dashboard
-Creating the Dashboard:
-
-Data Import:
-
-Import the Excel files and SQL query results into Power BI.
-Visualizations:
-
-Total Revenue: Card visualization for overall revenue.
-Top Products: Bar chart showing total revenue by product.
-Sales by Region: Pie chart or stacked bar chart for revenue by region.
-Monthly Trends: Line chart for monthly sales totals.
-Interactivity:
-
-Add slicers for "Region" and "Product" to allow users to filter results.
-4. GitHub Repository
-Structure:
-README.md for project overview.
-Folders for:
-Excel files.
-SQL scripts.
-Power BI files.
 
 
 
