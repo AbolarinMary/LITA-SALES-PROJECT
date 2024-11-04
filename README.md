@@ -1,27 +1,39 @@
 **Outline**
-
+`
 Project Summary
+`
 
-
+`
 Project Objectives
+`
 
-
+`
 Data Source
+`
 
-
+`
 Dataset
+`
 
 
+`
 Tools used
+`
 
 
+`
 Data Cleaning and Preparation
+`
 
 
+`
 Instructions
+`
 
-
+`
 Data Analysis
+`
+
 
 Excel
 
@@ -29,15 +41,17 @@ SQL
 
 PowerBI
 
-
+`
 Key Findings
+`
 
-
+`
 Conclusion
+`
 
-
+`
 Recommendation
-
+`
 
 **Project Summary: Sales Performance Analysis**
 
