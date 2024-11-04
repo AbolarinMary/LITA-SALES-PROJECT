@@ -129,7 +129,7 @@ Calculating revenue allows us to analyze total earnings per product, region, and
 **Instructions**
 
 1. Excel:
-2. 
+   
 o Perform an initial exploration of the sales data. Use pivot tables to summarize 
 total sales by product, region, and month.
 
@@ -139,7 +139,7 @@ total revenue by region.
 o Create any other interesting report
 
 
-4. SQL:
+2. SQL:
 
 Hint – You need to load the dataset into your SQL Server environment to write and 
 validate your queries.
@@ -163,7 +163,7 @@ o calculate the percentage of total sales contributed by each region.
 o identify products with no sales in the last quarter.
 
 
-5. Power BI:
+3. Power BI:
 
 o Create a dashboard that visualizes the insights found in Excel and SQL.
  The dashboard should include a sales overview, top-performing products, and 
