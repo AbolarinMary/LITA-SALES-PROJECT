@@ -107,11 +107,15 @@ Data cleaning is a crucial step in the data analysis process that ensures data i
 
 ![Screenshot (560)](https://github.com/user-attachments/assets/a2328b07-ed69-42d9-8f91-d17356486506)
 
+Before cleaning
+
+![Screenshot (562)](https://github.com/user-attachments/assets/debaaa07-d85d-4621-a2e9-95f0f9ea5a89)
+
+After cleaning
 
 **Remove duplicates**
 
 Highlighted all data (Ctrl + A) and removed duplicates via Data tab > Remove Duplicates option. This step removed 40,079 duplicate values, leaving 9,921 unique records.
-
 
 **Calculate revenue**
 
@@ -122,13 +126,65 @@ Purpose:
 Calculating revenue allows us to analyze total earnings per product, region, and period, which is essential for evaluating sales performance and profitability. 
 
 
+**Instructions**
+
+1. Excel:
+2. 
+o Perform an initial exploration of the sales data. Use pivot tables to summarize 
+total sales by product, region, and month.
+
+o Use Excel formulas to calculate metrics such as average sales per product and 
+total revenue by region.
+
+o Create any other interesting report
+
+
+4. SQL:
+
+Hint – You need to load the dataset into your SQL Server environment to write and 
+validate your queries.
+
+Write queries to extract key insights based on the following questions. 
+
+o retrieve the total sales for each product category.
+
+o find the number of sales transactions in each region.
+
+o find the highest-selling product by total sales value.
+
+o calculate total revenue per product.
+
+o calculate monthly sales totals for the current year.
+
+o find the top 5 customers by total purchase amount.
+
+o calculate the percentage of total sales contributed by each region.
+
+o identify products with no sales in the last quarter.
+
+
+5. Power BI:
+
+o Create a dashboard that visualizes the insights found in Excel and SQL.
+ The dashboard should include a sales overview, top-performing products, and 
+regional breakdowns
 
 
 
 
 
+**Data Analysis**
 
+Excel
 
+Product	Sum of Revenue
+Shoes	613380
+Shirt	485600
+Hat	316195
+Gloves	296900
+Jacket	208230
+Socks	180785
+Grand Total	2101090
 
 
 
