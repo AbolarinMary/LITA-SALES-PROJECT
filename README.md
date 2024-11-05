@@ -248,9 +248,13 @@ regional breakdowns
 ---
 # Data Analysis
 ---
+
 **Excel**
 
-# 1) Product	Sum of Revenue
+
+** 1) Product	Sum of Revenue
+**
+
 
 Shoes	613380
 
@@ -281,7 +285,7 @@ Shoes and shirt are the best selling products for the period in review
 
 
 ---
-# 2) Sales by region
+**2) Sales by region**
 ---
 
    
