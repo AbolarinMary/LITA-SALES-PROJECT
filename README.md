@@ -289,16 +289,6 @@ Shoes and shirt are the best selling products for the period in review
 ---
 
    
-South	927820
-
-East	485925
-
-North	387000
-
-West	300345
-
-Grand Total	 2,101,090.00 
-
 
 ![Screenshot (568)](https://github.com/user-attachments/assets/890f7479-d9ef-4cad-b974-cafc8b99a395)
 
