@@ -129,15 +129,15 @@ The dataset used for this project contains the following fields:
 ### Tools used
 ---
 
-1. Excel 
+- Excel 
 
  Purpose:
 
-- For  data cleaning
+1. For  data cleaning
 
-- For data analysis. 
+2. For data analysis. 
 
--  For easy manipulation of data and visualization through pivot tables and charts.
+3.  For easy manipulation of data and visualization through pivot tables and charts.
 
 2. SQL
 
