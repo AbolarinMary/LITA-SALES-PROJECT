@@ -126,10 +126,10 @@ The dataset used for this project contains the following fields:
 - Revenue: The total income generated from the order, calculated as Quantity × UnitPrice.
 
 
-### Tools used
+# Tools used
 ---
 
-1. Excel 
+# 1. Excel 
 
  Purpose:
 
@@ -139,7 +139,7 @@ The dataset used for this project contains the following fields:
 
 -  For easy manipulation of data and visualization through pivot tables and charts.
 
-2. SQL
+# 2. SQL
 
  Purpose:
 
@@ -148,13 +148,13 @@ The dataset used for this project contains the following fields:
 -   For data manipulation and retrieval.
 
 
-3. Power BI
+# 3. Power BI
 
   Purpose:
 
 - For data visualization and business intelligence, allowing users to create interactive reports and dashboards. It makes it easier to communicate insights derived from data.
 
-4.  Github
+# 4.  Github
 
  Purpose: 
 
@@ -162,7 +162,7 @@ The dataset used for this project contains the following fields:
 
 
 
-### Data Cleaning and Preparation
+# Data Cleaning and Preparation
 ---
 
 Data cleaning is a crucial step in the data analysis process that ensures data is accurate, consistent, and complete. Here are some steps you can take to clean data for analysis: 
@@ -174,10 +174,12 @@ Before cleaning
 ![Screenshot (562)](https://github.com/user-attachments/assets/debaaa07-d85d-4621-a2e9-95f0f9ea5a89)
 
 After cleaning
+---
 
-**Remove duplicates**
+Remove duplicates
 
 Highlighted all data (Ctrl + A) and removed duplicates via Data tab > Remove Duplicates option. This step removed 40,079 duplicate values, leaving 9,921 unique records.
+
 
 **Calculate revenue**
 
@@ -187,8 +189,10 @@ Purpose:
 
 Calculating revenue allows us to analyze total earnings per product, region, and period, which is essential for evaluating sales performance and profitability. 
 
+---
 
-### Instructions
+
+# Instructions
 ---
 
 # 1. Excel:
@@ -236,7 +240,7 @@ regional breakdowns
 
 
 
-### Data Analysis
+## Data Analysis
 ---
 Excel
 
@@ -267,6 +271,7 @@ Grand Total	**2101090**
 Insight: 
 Shoes and shirt are the best selling products for the period in review
 
+---
 
 
 
@@ -300,8 +305,10 @@ Grand Total	 2,101,090.00
 
 ![Screenshot (570)](https://github.com/user-attachments/assets/174d9edf-9782-4125-b9da-2a779b9f0896)
 
+---
 
-### Revenue per month
+
+# Revenue per month
 ---
 
 
