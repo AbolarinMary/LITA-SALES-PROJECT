@@ -55,13 +55,13 @@ Conclusion
 Recommendation
 `
 
-### Project Summary: Sales Performance Analysis
+Project Summary: Sales Performance Analysis
 ---
 
 In this project, the goal is to analyze the sales performance of a retail store through a comprehensive exploration of sales data, using Excel, SQL, and Power BI to uncover key insights. The analysis focuses on identifying top-selling products, assessing regional performance, and analyzing monthly sales trends.
 
 
-### Project Objectives
+ Project Objectives
 ---
 
 - To Utilize pivot tables to summarize total sales by product, region, and month, providing a clear overview of performance.
@@ -98,13 +98,13 @@ This structured approach aims to deliver a comprehensive understanding of sales 
 
 
 
-### Data Source
+ Data Source
 ---
 
 The datasets of this project was provided by ladies in tech africa as an assignment for analytic purpose.
 
 
-### Dataset
+ Dataset
 ---
 
 The dataset used for this project contains the following fields:
@@ -165,7 +165,13 @@ Tools used
  Data Cleaning and Preparation
 ---
 
-Data cleaning is a crucial step in the data analysis process that ensures data is accurate, consistent, and complete. Here are some steps you can take to clean data for analysis: 
+Data cleaning is a crucial step in the data analysis process that ensures data is accurate, consistent, and complete.
+
+Here are some steps you can take to clean data for analysis: 
+
+- Data loading and inspection
+- Handling missing variables
+- -Data cleaning and formatting
 
 ![Screenshot (560)](https://github.com/user-attachments/assets/a2328b07-ed69-42d9-8f91-d17356486506)
 
