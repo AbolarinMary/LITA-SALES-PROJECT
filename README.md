@@ -1,13 +1,14 @@
 ## E commerce sales analysis
 
+---
 **Project overview**
 
-Objective:
 The primary goal of this project is to analyze and deduce sales trends and revenue patterns across various regions and product categories to provide actionable insights for strategic decision-making. By identifying key drivers of sales performance, understanding regional and product-specific variances, and forecasting future trends, this analysis will support data-driven decisions for optimizing sales strategies, product offerings, resource allocation, and market expansion.
 
+---
 
 **Outline**
----
+
 
 `
 Project Overview
