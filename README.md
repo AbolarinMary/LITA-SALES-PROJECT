@@ -64,7 +64,7 @@ In this project, the goal is to analyze the sales performance of a retail store 
 ### Project Objectives
 ---
 
-. To Utilize pivot tables to summarize total sales by product, region, and month, providing a clear overview of performance.
+- To Utilize pivot tables to summarize total sales by product, region, and month, providing a clear overview of performance.
 
 . To Employ Excel formulas to derive key metrics such as average sales per product and total revenue by region, offering deeper insights into sales dynamics.
 
