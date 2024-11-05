@@ -126,10 +126,10 @@ The dataset used for this project contains the following fields:
 - Revenue: The total income generated from the order, calculated as Quantity × UnitPrice.
 
 
-# Tools used
+Tools used
 ---
 
-# 1. Excel [Download Here](https://www.microsoft.com)
+*1. Excel [Download Here](https://www.microsoft.com)
 
  Purpose:
 
@@ -139,7 +139,7 @@ The dataset used for this project contains the following fields:
 
 -  For easy manipulation of data and visualization through pivot tables and charts.
 
-# 2. SQL
+ 2. SQL
 
  Purpose:
 
@@ -148,13 +148,13 @@ The dataset used for this project contains the following fields:
 -   For data manipulation and retrieval.
 
 
-# 3. Power BI
+ 3. Power BI
 
   Purpose:
 
 - For data visualization and business intelligence, allowing users to create interactive reports and dashboards. It makes it easier to communicate insights derived from data.
 
-# 4.  Github
+ 4.  Github
 
  Purpose: 
 
@@ -162,7 +162,7 @@ The dataset used for this project contains the following fields:
 
 
 
-# Data Cleaning and Preparation
+ Data Cleaning and Preparation
 ---
 
 Data cleaning is a crucial step in the data analysis process that ensures data is accurate, consistent, and complete. Here are some steps you can take to clean data for analysis: 
@@ -192,10 +192,10 @@ Calculating revenue allows us to analyze total earnings per product, region, and
 ---
 
 
-# Instructions
+ Instructions
 ---
 
-# 1. Excel:
+1. Excel:
    
 - Perform an initial exploration of the sales data. Use pivot tables to summarize 
 total sales by product, region, and month.
@@ -206,7 +206,7 @@ total revenue by region.
 - Create any other interesting report
 
 
-# 2. SQL:
+ 2. SQL:
 
 Hint – You need to load the dataset into your SQL Server environment to write and 
 validate your queries.
@@ -230,7 +230,7 @@ Write queries to extract key insights based on the following questions.
 - identify products with no sales in the last quarter.
 
 
-# 3. Power BI:
+ 3. Power BI:
 
 - Create a dashboard that visualizes the insights found in Excel and SQL.
  The dashboard should include a sales overview, top-performing products, and 
@@ -240,9 +240,9 @@ regional breakdowns
 
 
 
-## Data Analysis
+# Data Analysis
 ---
-Excel
+**Excel**
 
 # 1) Product	Sum of Revenue
 
@@ -331,12 +331,12 @@ Close attention should be made to correct whatever affected the sales during the
 
 
 
-### Use Excel formulas to calculate metrics
+# Use Excel formulas to calculate metrics
 ---
 
 
 
-# Average Sales per Product
+ Average Sales per Product
 ---
 
  =AVERAGEIF(range,criteria[average-range]) 
@@ -354,7 +354,7 @@ Copy and paste the product to column K, then remove duplicate in order to have o
 
 
 
-# Total Revenue by Region
+ Total Revenue by Region
 ---
 
  =AVERAGEIF(range,criteria[average-range]) 
@@ -375,7 +375,7 @@ Then use the formular =SUMIF(D:D,Table2[@Region],H:H) to calculate our sum of re
 
 
 
-### SQL
+# SQL
 ---
 
 When loading my dataset I changed the unitsales and quantity column to “int” datatype
@@ -393,7 +393,7 @@ Set Sales = quantity * unitprice)
 ```
 
 
-# Retrieve the total sales for each product category
+ Retrieve the total sales for each product category
 ---
 
 ```sql
@@ -410,7 +410,7 @@ Order by Total_Revenue desc
 Insight : -Hats and shoes makes most sales and should be considered for marketing and high stock provision.
 
 
-## find the number of sales transactions in each region
+ Find the number of sales transactions in each region
 ---
 
 ```sql
@@ -429,7 +429,7 @@ Order by Sales_Per_Product desc
 
 
 
-## Find the highest-selling product by total sales value
+ Find the highest-selling product by total sales value
 ---
 
 ```sql
@@ -442,7 +442,7 @@ order by Total_sales desc
 Insight: Shoe is the highest selling product with a total sales value of 613380
 
 
-## calculate total revenue per product
+ Calculate total revenue per product
 ---
 
 
@@ -451,7 +451,7 @@ Insight: Shoe is the highest selling product with a total sales value of 613380
 
 
 
-## calculate monthly sales totals for the current year
+ Calculate monthly sales totals for the current year
 ---
 
 ```sql
@@ -462,7 +462,7 @@ Group by Datefromparts(Year(OrderDate), Month(OrderDate), 1)
 Order by Sales_Month;
 ```
 
-## Find the top 5 customers by total purchase amount
+ Find the top 5 customers by total purchase amount
 ---
 
 ```sql
@@ -479,7 +479,7 @@ order by Total_sales desc
 
 
 
-## calculate the percentage of total sales contributed by each region
+ Calculate the percentage of total sales contributed by each region
 ---
 
 ```sql
@@ -498,7 +498,7 @@ order by Sales_percentage DESC
 
 
 
-## Identify products with no sales in the last quarter
+ Identify products with no sales in the last quarter
 ---
 
 ```sql
@@ -511,7 +511,7 @@ WHERE OrderDate >= DATEADD(QUARTER, -1, GETDATE()))
 ```
 
 
-## Key Findings
+ Key Findings
 ---
 
 
@@ -527,7 +527,7 @@ WHERE OrderDate >= DATEADD(QUARTER, -1, GETDATE()))
 
 
 
-### Recommendation
+ Recommendation
 ---
 
 - Enhance Marketing for Top-Performing Products Focus on marketing campaigns that promote the top-selling product categories, especially Shoes. Highlighting their popularity could increase brand trust and encourage further purchases.
