@@ -129,7 +129,7 @@ The dataset used for this project contains the following fields:
 Tools used
 ---
 
-*1. Excel [Download Here](https://www.microsoft.com)
+1. Excel [Download Here](https://www.microsoft.com)
 
  Purpose:
 
