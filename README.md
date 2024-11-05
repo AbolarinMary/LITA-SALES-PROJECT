@@ -129,15 +129,15 @@ The dataset used for this project contains the following fields:
 ### Tools used
 ---
 
-- Excel 
+1. Excel 
 
  Purpose:
 
-1. For  data cleaning
+- For  data cleaning
 
-2. For data analysis. 
+- For data analysis. 
 
-3.  For easy manipulation of data and visualization through pivot tables and charts.
+-  For easy manipulation of data and visualization through pivot tables and charts.
 
 2. SQL
 
@@ -189,6 +189,7 @@ Calculating revenue allows us to analyze total earnings per product, region, and
 
 
 **Instructions**
+---
 
 1. Excel:
    
