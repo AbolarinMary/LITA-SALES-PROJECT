@@ -55,12 +55,15 @@ Conclusion
 Recommendation
 `
 
-**Project Summary: Sales Performance Analysis**
+### Project Summary: Sales Performance Analysis
+---
 
 In this project, the goal is to analyze the sales performance of a retail store through a comprehensive exploration of sales data, using Excel, SQL, and Power BI to uncover key insights. The analysis focuses on identifying top-selling products, assessing regional performance, and analyzing monthly sales trends.
 
 
-**Project Objectives**
+### Project Objectives
+---
+
 To Utilize pivot tables to summarize total sales by product, region, and month, providing a clear overview of performance.
 
 To Employ Excel formulas to derive key metrics such as average sales per product and total revenue by region, offering deeper insights into sales dynamics.
