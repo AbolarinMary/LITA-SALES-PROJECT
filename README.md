@@ -188,47 +188,47 @@ Purpose:
 Calculating revenue allows us to analyze total earnings per product, region, and period, which is essential for evaluating sales performance and profitability. 
 
 
-**Instructions**
+### Instructions
 ---
 
-1. Excel:
+# 1. Excel:
    
-o Perform an initial exploration of the sales data. Use pivot tables to summarize 
+- Perform an initial exploration of the sales data. Use pivot tables to summarize 
 total sales by product, region, and month.
 
-o Use Excel formulas to calculate metrics such as average sales per product and 
+- Use Excel formulas to calculate metrics such as average sales per product and 
 total revenue by region.
 
-o Create any other interesting report
+- Create any other interesting report
 
 
-2. SQL:
+# 2. SQL:
 
 Hint – You need to load the dataset into your SQL Server environment to write and 
 validate your queries.
 
 Write queries to extract key insights based on the following questions. 
 
-o retrieve the total sales for each product category.
+- retrieve the total sales for each product category.
 
-o find the number of sales transactions in each region.
+- find the number of sales transactions in each region.
 
-o find the highest-selling product by total sales value.
+- find the highest-selling product by total sales value.
 
-o calculate total revenue per product.
+- calculate total revenue per product.
 
-o calculate monthly sales totals for the current year.
+- calculate monthly sales totals for the current year.
 
-o find the top 5 customers by total purchase amount.
+- find the top 5 customers by total purchase amount.
 
-o calculate the percentage of total sales contributed by each region.
+- calculate the percentage of total sales contributed by each region.
 
-o identify products with no sales in the last quarter.
+- identify products with no sales in the last quarter.
 
 
-3. Power BI:
+# 3. Power BI:
 
-o Create a dashboard that visualizes the insights found in Excel and SQL.
+- Create a dashboard that visualizes the insights found in Excel and SQL.
  The dashboard should include a sales overview, top-performing products, and 
 regional breakdowns
 
@@ -236,11 +236,11 @@ regional breakdowns
 
 
 
-**Data Analysis**
-
+### Data Analysis
+---
 Excel
 
-1) Product	Sum of Revenue
+# 1) Product	Sum of Revenue
 
 Shoes	613380
 
@@ -270,7 +270,8 @@ Shoes and shirt are the best selling products for the period in review
 
 
 
-2) **Sales by region**
+# 2) Sales by region
+---
 
    
 South	927820
@@ -300,8 +301,8 @@ Grand Total	 2,101,090.00
 ![Screenshot (570)](https://github.com/user-attachments/assets/174d9edf-9782-4125-b9da-2a779b9f0896)
 
 
-**Revenue per month
-**
+### Revenue per month
+---
 
 
 
@@ -323,12 +324,14 @@ Close attention should be made to correct whatever affected the sales during the
 
 
 
-**Use Excel formulas to calculate metrics
+### Use Excel formulas to calculate metrics
+---
 
-**
 
 
-**Average Sales per Product:**
+# Average Sales per Product
+---
+
  =AVERAGEIF(range,criteria[average-range]) 
 
 
@@ -344,11 +347,14 @@ Copy and paste the product to column K, then remove duplicate in order to have o
 
 
 
-**Total Revenue by Region**
+# Total Revenue by Region
+---
 
  =AVERAGEIF(range,criteria[average-range]) 
 
-Copy and paste the Region to column K, then remove duplicate in order to have our unique Region list. Then use the formular =SUMIF(D:D,Table2[@Region],H:H) to calculate our sum of revenue for each region. Where “D:D” rep our Region column, “Table2[@Region” rep the region we are working with, “,H:H” rep our Revenue Column.
+Copy and paste the Region to column K, then remove duplicate in order to have our unique Region list.
+
+Then use the formular =SUMIF(D:D,Table2[@Region],H:H) to calculate our sum of revenue for each region.  Where “D:D” rep our Region column, “Table2[@Region” rep the region we are working with, “,H:H” rep our Revenue Column.
 
 
 ![Screenshot (584)](https://github.com/user-attachments/assets/c6c3363c-2d6a-4f34-8140-92de9d6869dc)
@@ -362,8 +368,8 @@ Copy and paste the Region to column K, then remove duplicate in order to have ou
 
 
 
-**SQL
-**
+### SQL
+---
 
 When loading my dataset I changed the unitsales and quantity column to “int” datatype
 
@@ -380,7 +386,8 @@ Set Sales = quantity * unitprice)
 ```
 
 
-**retrieve the total sales for each product category.**
+# Retrieve the total sales for each product category
+---
 
 ```sql
 Total Sales by Product
@@ -396,7 +403,8 @@ Order by Total_Revenue desc
 Insight : -Hats and shoes makes most sales and should be considered for marketing and high stock provision.
 
 
-**find the number of sales transactions in each region**
+## find the number of sales transactions in each region
+---
 
 ```sql
 Sales Transactions by Region
@@ -414,8 +422,8 @@ Order by Sales_Per_Product desc
 
 
 
-**Find the highest-selling product by total sales value**
-
+## Find the highest-selling product by total sales value
+---
 
 ```sql
 select top 1 Product,
@@ -427,7 +435,8 @@ order by Total_sales desc
 Insight: Shoe is the highest selling product with a total sales value of 613380
 
 
-**calculate total revenue per product.**
+## calculate total revenue per product
+---
 
 
 
@@ -435,7 +444,8 @@ Insight: Shoe is the highest selling product with a total sales value of 613380
 
 
 
-**calculate monthly sales totals for the current year**
+## calculate monthly sales totals for the current year
+---
 
 ```sql
 Select Datefromparts(Year(OrderDate), Month(OrderDate), 1) as Sales_Month, Sum(Revenue) as Monthly_Total  
@@ -445,7 +455,8 @@ Group by Datefromparts(Year(OrderDate), Month(OrderDate), 1)
 Order by Sales_Month;
 ```
 
-**Find the top 5 customers by total purchase amount.**
+## Find the top 5 customers by total purchase amount
+---
 
 ```sql
 select top 5 Customer_Id,
@@ -461,7 +472,8 @@ order by Total_sales desc
 
 
 
-**calculate the percentage of total sales contributed by each region**
+## calculate the percentage of total sales contributed by each region
+---
 
 ```sql
 select Region,
@@ -479,7 +491,8 @@ order by Sales_percentage DESC
 
 
 
-Identify products with no sales in the last quarter
+## Identify products with no sales in the last quarter
+---
 
 ```sql
 SELECT DISTINCT Product 
@@ -491,34 +504,34 @@ WHERE OrderDate >= DATEADD(QUARTER, -1, GETDATE()))
 ```
 
 
-**Key Findings**
-
-Highest Selling Product: Shoes generated the highest revenue, totaling 613,380 units sold.
-
-Revenue by Region: The South region was the top-performing region, generating 927,820 in revenue, followed by East and North regions.
-
-Sales Trends by Month: Sales peaked in February with a revenue of 546,300, while the lowest sales occurred in September and October, indicating a seasonal sales dip.
-
-The analysis reveals a few key insights:
-
-**Product Performance**: Shoes are the most selling item, representing a high sales value across all regions. However,jacket and socks needs  improved marketing 
-
-Regional Sales: The South region shows a significantly higher revenue contribution, which could indicate a strong customer preference or effective marketing strategies within this region.
+## Key Findings
+---
 
 
+- Highest Selling Product: Shoes generated the highest revenue, totaling 613,380 units sold.
 
-**Recommendation**
+- Revenue by Region: The South region was the top-performing region, generating 927,820 in revenue, followed by East and North regions.
+
+- Sales Trends by Month: Sales peaked in February with a revenue of 546,300, while the lowest sales occurred in September and October, indicating a seasonal sales dip.
+
+- Product Performance: Shoes are the most selling item, representing a high sales value across all regions. However,jacket and socks needs  improved marketing 
+
+- Regional Sales: The South region shows a significantly higher revenue contribution, which could indicate a strong customer preference or effective marketing strategies within this region.
 
 
-Enhance Marketing for Top-Performing Products Focus on marketing campaigns that promote the top-selling product categories, especially Shoes. Highlighting their popularity could increase brand trust and encourage further purchases.
 
-Product Diversification and Bundling Opportunities To boost revenue from low-performing items like Socks and Jackets, consider creating product bundles or seasonal discounts. This could attract budget-conscious customers and increase average sales per customer.
+### Recommendation
+---
 
-Targeted Regional Campaigns With the South region demonstrating the highest revenue, additional promotional efforts in East and West could help balance sales distribution. A focus on localized marketing strategies may appeal to unique preferences in each region.
+- Enhance Marketing for Top-Performing Products Focus on marketing campaigns that promote the top-selling product categories, especially Shoes. Highlighting their popularity could increase brand trust and encourage further purchases.
 
-Address Seasonal Sales Fluctuations To combat the dip in sales observed in September and October, consider introducing seasonal promotions or limited-time offers during these months to stimulate demand.
+- Product Diversification and Bundling Opportunities To boost revenue from low-performing items like Socks and Jackets, consider creating product bundles or seasonal discounts. This could attract budget-conscious customers and increase average sales per customer.
 
-Customer Segmentation and Retention With a large unique customer base, implementing customer segmentation could allow for more tailored marketing. Sending targeted offers based on past purchases can help drive repeat sa
+- Targeted Regional Campaigns With the South region demonstrating the highest revenue, additional promotional efforts in East and West could help balance sales distribution. A focus on localized marketing strategies may appeal to unique preferences in each region.
+
+- Address Seasonal Sales Fluctuations To combat the dip in sales observed in September and October, consider introducing seasonal promotions or limited-time offers during these months to stimulate demand.
+
+- Customer Segmentation and Retention With a large unique customer base, implementing customer segmentation could allow for more tailored marketing. Sending targeted offers based on past purchases can help drive repeated success.
 
 
 
