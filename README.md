@@ -60,7 +60,7 @@ Project Summary: Sales Performance Analysis
 
 In this project, the goal is to analyze the sales performance of a retail store through a comprehensive exploration of sales data, using Excel, SQL, and Power BI to uncover key insights. The analysis focuses on identifying top-selling products, assessing regional performance, and analyzing monthly sales trends.
 
-
+---
  Project Objectives
 ---
 
@@ -97,13 +97,13 @@ In this project, the goal is to analyze the sales performance of a retail store 
 This structured approach aims to deliver a comprehensive understanding of sales performance,facilitating data-driven decision-making for future strategies
 
 
-
+---
  Data Source
 ---
 
 The datasets of this project was provided by ladies in tech africa as an assignment for analytic purpose.
 
-
+---
  Dataset
 ---
 
@@ -161,7 +161,7 @@ Tools used
 - Github is ideal for portfolio building and public showcasing of the work done.
 
 
-
+---
  Data Cleaning and Preparation
 ---
 
@@ -195,9 +195,9 @@ Purpose:
 
 Calculating revenue allows us to analyze total earnings per product, region, and period, which is essential for evaluating sales performance and profitability. 
 
+
+
 ---
-
-
  Instructions
 ---
 
@@ -245,7 +245,7 @@ regional breakdowns
 
 
 
-
+---
 # Data Analysis
 ---
 **Excel**
@@ -277,10 +277,10 @@ Grand Total	**2101090**
 Insight: 
 Shoes and shirt are the best selling products for the period in review
 
+
+
+
 ---
-
-
-
 # 2) Sales by region
 ---
 
@@ -311,9 +311,9 @@ Grand Total	 2,101,090.00
 
 ![Screenshot (570)](https://github.com/user-attachments/assets/174d9edf-9782-4125-b9da-2a779b9f0896)
 
+
+
 ---
-
-
 # Revenue per month
 ---
 
@@ -336,12 +336,12 @@ Considering these festive periods(april & december), the revenue ought to greatl
 Close attention should be made to correct whatever affected the sales during these periods
 
 
-
-# Use Excel formulas to calculate metrics
 ---
+# Use Excel formulas to calculate metrics
 
 
 
+---
  Average Sales per Product
 ---
 
@@ -359,7 +359,7 @@ Copy and paste the product to column K, then remove duplicate in order to have o
 
 
 
-
+---
  Total Revenue by Region
 ---
 
@@ -380,7 +380,7 @@ Then use the formular =SUMIF(D:D,Table2[@Region],H:H) to calculate our sum of re
 
 
 
-
+---
 # SQL
 ---
 
@@ -398,7 +398,7 @@ SALES COLUMN WAS CALCULATED
 Set Sales = quantity * unitprice)
 ```
 
-
+---
  Retrieve the total sales for each product category
 ---
 
@@ -415,7 +415,7 @@ Order by Total_Revenue desc
 
 Insight : -Hats and shoes makes most sales and should be considered for marketing and high stock provision.
 
-
+---
  Find the number of sales transactions in each region
 ---
 
@@ -434,7 +434,7 @@ Order by Sales_Per_Product desc
 
 
 
-
+---
  Find the highest-selling product by total sales value
 ---
 
@@ -447,7 +447,7 @@ order by Total_sales desc
 ```
 Insight: Shoe is the highest selling product with a total sales value of 613380
 
-
+---
  Calculate total revenue per product
 ---
 
@@ -456,7 +456,7 @@ Insight: Shoe is the highest selling product with a total sales value of 613380
 ![Screenshot (592)](https://github.com/user-attachments/assets/23254779-25d9-4a97-a6dd-f3ddd042ed16)
 
 
-
+---
  Calculate monthly sales totals for the current year
 ---
 
@@ -468,6 +468,7 @@ Group by Datefromparts(Year(OrderDate), Month(OrderDate), 1)
 Order by Sales_Month;
 ```
 
+---
  Find the top 5 customers by total purchase amount
 ---
 
@@ -484,7 +485,7 @@ order by Total_sales desc
 ![Screenshot (590)](https://github.com/user-attachments/assets/74faefae-ad5f-4f30-861f-4a3fdc37a5ea)
 
 
-
+---
  Calculate the percentage of total sales contributed by each region
 ---
 
@@ -503,7 +504,7 @@ order by Sales_percentage DESC
 ![Screenshot (589)](https://github.com/user-attachments/assets/e8eb6cea-5c51-4492-9154-7eca3b40c8c3)
 
 
-
+---
  Identify products with no sales in the last quarter
 ---
 
@@ -516,7 +517,7 @@ FROM [dbo].[LITA Capstone Dataset SalesData]
 WHERE OrderDate >= DATEADD(QUARTER, -1, GETDATE()))
 ```
 
-
+---
  Key Findings
 ---
 
@@ -532,7 +533,7 @@ WHERE OrderDate >= DATEADD(QUARTER, -1, GETDATE()))
 - Regional Sales: The South region shows a significantly higher revenue contribution, which could indicate a strong customer preference or effective marketing strategies within this region.
 
 
-
+---
  Recommendation
 ---
 
